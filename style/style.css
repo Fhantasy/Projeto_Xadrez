@@ -1,0 +1,267 @@
+body {
+  background-image: linear-gradient(#111111, #4b4b4b);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infosDiv {
+  color: black;
+  width: 250px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #e6e6ff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.line {
+  display: grid;
+  grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem 6rem 6rem;
+}
+.quad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 90px;
+  min-height: 90px;
+  cursor: pointer;
+}
+
+.columnRowTitle {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.whitePosition {
+  color: white;
+  background-color: #a1a6f7;
+}
+
+.blackPosition {
+  color: black;
+  background-color: #252592;
+}
+
+.whitePiece {
+  color: white;
+}
+
+.blackPiece {
+  color: black;
+}
+.possiblePosition {
+  background-color: green;
+}
+.enemyPosition {
+  background-color: red;
+}
+.blackPawn {
+  background-image: url("../images/black_pawn.png");
+  background-size: cover;
+  background-position: center;
+}
+.blackRook {
+  background-image: url("../images/black_rook.png");
+  background-size: cover;
+  background-position: center;
+}
+.blackBishop {
+  background-image: url("../images/black_bishop.png");
+  background-size: cover;
+  background-position: center;
+}
+.blackKnigth {
+  background-image: url("../images/black_knight.png");
+  background-size: cover;
+  background-position: center;
+}
+.blackQueen {
+  background-image: url("../images/black_queen.png");
+  background-size: cover;
+  background-position: center;
+}
+.blackKing {
+  background-image: url("../images/black_king.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.whitePawn {
+  background-image: url("../images/white_pawn.png");
+  background-size: cover;
+  background-position: center;
+}
+.whiteRook {
+  background-image: url("../images/white_rook.png");
+  background-size: cover;
+  background-position: center;
+}
+.whiteKnigth {
+  background-image: url("../images/white_knight.png");
+  background-size: cover;
+  background-position: center;
+}
+.whiteBishop {
+  background-image: url("../images/white_bishop.png");
+  background-size: cover;
+  background-position: center;
+}
+.whiteQueen {
+  background-image: url("../images/white_queen.png");
+  background-size: cover;
+  background-position: center;
+}
+.whiteKing {
+  background-image: url("../images/white_king.png");
+  background-size: cover;
+  background-position: center;
+}
+.promotionCard {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background-color: #2c2c2cbb;
+}
+.promotionText {
+  font-size: 17px;
+  color: white;
+}
+.promotionImg {
+  width: 100px;
+}
+.gameOverDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #2135a7;
+  width: 600px;
+  height: 200px;
+}
+.gameOverText {
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+  font-weight: bold;
+}
+.playAgainBtn {
+  background-color: green;
+  box-shadow: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 7px;
+}
+.playAgainBtn:hover {
+  background-color: rgb(1, 172, 1);
+}
+.credits {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 1199px) {
+  body {
+    height: auto;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .infosDiv {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .content {
+    text-align: center;
+  }
+  .quad {
+    min-width: auto;
+    min-height: auto;
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .quad {
+    width: 60px;
+    height: 60px;
+  }
+  .columnRowTitle {
+    font-size: 18px;
+  }
+  .gameOverDiv {
+    width: 450px;
+  }
+}
+@media (max-width: 570px) {
+  .quad {
+    width: 50px;
+    height: 50px;
+  }
+  .infosDiv {
+    font-size: 17px;
+    width: 200px;
+    height: 90px;
+  }
+}
+@media (max-width: 459px) {
+  .quad {
+    width: 40px;
+    height: 40px;
+  }
+  .infosDiv {
+    font-size: 15px;
+    width: 180px;
+    height: 80px;
+  }
+  .columnRowTitle {
+    font-size: 15px;
+  }
+  .promotionCard {
+    width: 250px;
+  }
+  .promotionImg {
+    width: 70px;
+  }
+  .gameOverDiv {
+    width: 275px;
+  }
+  .gameOverText {
+    font-size: 18px;
+  }
+  .playAgainBtn {
+    font-size: 16px;
+  }
+  .credits {
+    font-size: 13px;
+  }
+}
+@media (max-width: 365px) {
+  .quad {
+    width: 30px;
+    height: 30px;
+  }
+}
